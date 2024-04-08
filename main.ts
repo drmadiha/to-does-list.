@@ -3,7 +3,7 @@ import inquirer from"inquirer";
 import chalk from "chalk";
 let todos=[];
 let condition=true;
-console.log(chalk.bgGreen.bold("Wellcom to my todo EID's list"));
+console.log(chalk.bgRedBright.bold("Wellcom to my todo EID's list"));
 while(condition){
 let addtask=await inquirer.prompt([{
     name:"list",
@@ -49,4 +49,5 @@ let count=1;
 for(let val of todos){
     console.log(chalk.green.bold(`list ${count}${val}`))
     count++;
-}}
+}
+}
